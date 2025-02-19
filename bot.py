@@ -17,7 +17,7 @@ bot = Client("Renamer", bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH, p
 if STRING_SESSION:
     apps = [Client2,bot]
     for app in apps:
-        app.start()
+        app.start("0.0.0.0", 8000)
     idle()
     for app in apps:
         app.stop()
